@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+h1{
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
+h2{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+p{
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 10px;
+  text-align: center;
+}
+#starting-page{
+
+  height: 200px;
+  width: 50%;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 16px;  
+
+
+}
+
+#starting-page button{
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(50, 50, 179);
+  color: white;
+  position: relative;
+  left: 45%;
+}
+
+#questionPages{
+  height: fit-content;
+  width: 50%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 16px;  
+background-color: white;
+padding-bottom: 40px;
+  
+}
+#questionPages button{
+  padding: 10px 50px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(50, 50, 179);
+  color: white;
+}
+
+#options{
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  display: flexbox;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#finalPage{
+  height: 200px;
+  width: 50%;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 16px; 
+}
+#finalPage button{
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(50, 50, 179);
+  color: white;
+  position: relative;
+  left: 43%;
+}
+#finalPage h2{
+  text-align: center;
+  padding: 10px;
+}
+
+@media(max-width: 480px){
+  #starting-page{
+    width: 90%;
+    margin: auto;
+   height: fit-content;
+   padding: 20px;
+   
+  }
+
+
+  #questionPages{
+    width: 90%;
+    margin: auto;
+
+  }
+  #options{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  #finalPage{
+    width: 90%;
+    margin: auto;
+
+
+  }
+  #finalPage button{
+    position: relative;
+    left: 100px;
+  }
+  #starting-page button{
+    position: relative;
+    left: 100px;
+
+  }
+}
+

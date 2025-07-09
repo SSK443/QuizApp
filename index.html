@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizApp</title>
+  <link rel="stylesheet" href="./style.css">
+
+<link rel="shortcut icon" href="./asset/android-chrome-512x512.png" type="image/x-icon">
+</head>
+<body>
+  <!-- staring page -->
+   <div id="starting-page">
+<h1>Quiz Game  </h1>
+<p>Test your knowledge with 10 questions. You have 30 seconds per question.</p>
+<button onclick="start()">Start</button>
+   </div>
+   <!-- question pages -->
+    <div id="questionPages" style="display: none;">
+
+      <h1 id="timer">Time Left: <span id="timer Heading"></span> </h1>
+
+      <h2 id="questNumber">Question: <span id="questNumberHeading"></span></h2>
+      
+      <p id="quests"></p>
+      <section id="options">
+
+      </section>
+    </div>
+
+<!-- finalpage -->
+
+<div id="finalPage" style="display: none;">
+  <h1>Your Score </h1>
+  <h2 id="score"> <span id="totalScore"></span></h2>
+  <button  onclick="Reset()">Restart</button>
+</div>
+
+
+</body>
+<script src="./script.js"></script>
+</html>
